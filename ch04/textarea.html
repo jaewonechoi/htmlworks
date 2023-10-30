@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        textarea{
+            /* textarea의 크기 조정 불가 설정 */
+            resize: none;
+        }
+        fieldset{width: 500px;}
+        /* input 태그의 속성에 스타일을 줄때 [속성='속성값']대괄호를 사용함 */
+        input[type='submit']{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>배송 업무</legend>
+            <textarea cols="60" rows="5" name="memo" placeholder="배송시 요청사항을 적어주세요"></textarea>
+            <!-- </textarea>를 <textarea>끝나는 부분에 붙여줘야 공백이 안생김 -->
+        </fieldset>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>
