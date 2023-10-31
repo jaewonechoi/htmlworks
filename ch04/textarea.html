@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
+        form{
+            width: 600px;
+        }
         textarea{
             /* textarea의 크기 조정 불가 설정 */
             resize: none;
@@ -20,6 +23,8 @@
     <form action="" method="post">
         <fieldset>
             <legend>배송 업무</legend>
+            <!-- 여러줄 입력하는 기능, 멀티라인 태그 -->
+            <!-- cols(칼럼) - 영어기준 글자수, row - 보이는 줄수, placeholder - 힌트글 -->
             <textarea cols="60" rows="5" name="memo" placeholder="배송시 요청사항을 적어주세요"></textarea>
             <!-- </textarea>를 <textarea>끝나는 부분에 붙여줘야 공백이 안생김 -->
         </fieldset>
