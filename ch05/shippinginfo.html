@@ -11,6 +11,39 @@
     <h2>레드향 주문하기</h2>
     <form action="shippinginfo.jsp" method="post">
         <fieldset>
+            <legend>상품 선택</legend>
+            <p>주문할 상품을 선택해 주세요.</p>
+            <ul>
+                <!-- type="number" : 숫자 표시(스핀 박스) -->
+                <li>
+                    <label><input type="checkbox" name="ck_gift3" value="g_3">선물용 3kg</label>
+                    <input type="number" name="num_gift3" min="0" max="5">개(최대 5개)
+                </li>
+                <li>
+                    <label><input type="checkbox" name="ck_gift5" value="g_5">선물용 5kg</label>
+                    <input type="number" name="num_gift5" min="0" max="3">개(최대 3개)
+                </li>
+            </ul>
+            <ul>
+                <!-- type="range" : 범위 표시(슬라이드 바) -->
+                <li>
+                    <label><input type="checkbox" name="ck_fa3" value="g_3">가정용 3kg</label>
+                    <input type="range" min="0" max="5" name="num_fa3">개(최대 5개)
+                </li>
+                <li>
+                    <label><input type="checkbox" name="ck_fa5" value="g_5">가정용 5kg</label>
+                    <input type="range" min="0" max="3" name="num_fa5">개(최대 3개)
+                </li>
+            </ul>
+            <p>포장 선택</p>
+            <ul>
+                <li>
+                    <label><input type="radio" name="gift" value="yes">선물 포장</label>
+                    <label class="size"><input type="radio" name="gift" value="no" checked>선물 포장 안함</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
             <legend>배송 정보</legend>
             <ul>
                 <li>
@@ -40,8 +73,8 @@
                     <input type="date" id="d-day" name="d-day">
                     <small>(주문일로부터 최소 3일 이후)</small>
                 </li>
-                <li>
-                    <label for="memo">메모</label>
+                <li class="memo">
+                    <label class="me" for="memo">메모</label>
                     <textarea cols="40" rows="3" id="memo" name="memo"
                              placeholder="배송시 요청사항을 적어주세요"></textarea>
                 </li>
@@ -49,6 +82,7 @@
         </fieldset>
         <div>
             <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
         </div>
     </form>
 </div>

@@ -1,10 +1,10 @@
 #container{
     width: 960px;
-    margin: 20 auto;
+    margin: 20px auto;
 }
 h2{text-align: center;}
 form{
-    width: 600px;
+    width: 650px;
     margin: 0 auto;
 }
 fieldset{margin-bottom: 16px;}
@@ -12,6 +12,13 @@ ul li{
     list-style: none;
     margin: 16px;
 }
-li textarea{
-    padding-top: 22.5px;
+ul li label{
+    width: 100px;
+    float: left;
+}
+ul li label.size{width: 140px;}
+li textarea{resize: none;}
+input[type='submit'], input[type='reset']{
+    cursor: pointer;
+    padding: 5px 10px;
 }

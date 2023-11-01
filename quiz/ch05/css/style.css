@@ -1,0 +1,16 @@
+/* front.html에 연결 */
+/* *{margin: 0; padding: 0;} */
+#container{
+    width: 520px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 20px 30px;
+}
+ul li{
+    list-style: none;
+    line-height: 2;
+}
+ul li label.info{
+    width: 60px;
+    float: left;
+}
