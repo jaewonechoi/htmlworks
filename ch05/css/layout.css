@@ -1,4 +1,4 @@
-/* float-layout.html의 스타일 */
+/* float-layout.html에 연결 */
 *{margin: 0; padding: 0;}
 #container{
     width: 1000px;
@@ -13,14 +13,14 @@ header{
     /* padding: 10px; */
 }
 section{
-    width: 660px;
+    width: 666px;
     height: 600px;
     border: 1px solid #333;
     float: left;
     background-color: skyblue;
 }
 aside{
-    width: 320px;
+    width: 330px;
     height: 600px;
     border: 1px solid #333;
     float: right;
