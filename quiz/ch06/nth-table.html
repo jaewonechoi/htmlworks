@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표 만들고 스타일 넣기</title>
+  <style>
+    body :first-child{
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    table td:nth-of-type(2n+1){
+      width: 100px;
+      height: 30px;
+      border: 1px solid #333;
+      background-color: #ccc;
+      text-align: center;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    table td:nth-of-type(2n){
+      width: 150px;
+      height: 30px;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+    <table>
+      <tr>
+        <td>이름</td>
+        <td></td>
+        <td>연락처</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>주소</td>
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+        <td>이메일</td>
+        <td colspan="3"></td>
+      </tr>
+    </table>
+</body>
+</html>

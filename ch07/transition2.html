@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition과 transform 속성</title>
+  <style>
+   .tr{
+    width: 200px;
+    height: 200px;
+    background: orange;
+
+    /* transition-property: width, height, transform;
+    transition-duration: 1s, 1s, 2s; */
+    transition: width, height, 0.5s 1s;
+    /* transition: width, height, x y */
+    /* 시간 사이에 콤마를 안찍을시 y시간후에 x시간만큼 늘어남 */
+    /* 찍었을 경우 앞에 x시간은 무시되고 y시간만큼 동시에 늘어남 */
+   }
+   .tr:hover{
+    width: 250px;
+    height: 250px;
+    /* transform: rotate(135deg); */
+   }
+
+  </style>
+</head>
+<body>
+  <div class="tr"></div>
+</body>
+</html>

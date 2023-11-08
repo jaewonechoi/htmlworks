@@ -1,0 +1,26 @@
+/* a-selector.html에 연결 */
+*{margin: 0; padding: 0;}
+.wrap{
+  width: 960px;
+  margin: 0 auto;
+}
+nav{
+  height: 80px;
+}
+nav ul{
+  list-style: none;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 20px;
+}
+ul li a:link, a:visited{  /* ul li a와 같음 */
+  text-decoration: none;
+  color: #222;
+  padding: 10px;
+}
+ul li a:hover, a:focus{background: #222; color: rgb(128, 128, 128);}
+ul li a:active{background: #f00;}

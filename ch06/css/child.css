@@ -1,0 +1,35 @@
+/* child.html에 연결 */
+#container{
+  width: 960px;
+  margin: 0 auto;
+}
+.contents{
+  width: 400px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* 모든 자식요소중 첫번째 자식 요소 */
+.contents :first-child{ /* nth-child(1) */
+  color: blue;
+}
+
+/* 모든 자식요소중 n번째 자식 요소 */
+.contents :nth-child(2n){ /* 괄호안에 2n(짝수), 2n-1(홀수)도 사용 */
+  background:yellow;
+}
+
+.contents :last-child{
+  background: yellowgreen;
+}
+
+/* p:nth-of-type(): p 태그중에서 2번째 선택 */
+.contents p:nth-of-type(2){
+  color: #5f66f0;
+}
+
+/* 본문 내용2를 색으로 전환하기 */
+.contents h2:nth-of-type(2){
+  font-style: italic;
+  color: green;
+}
